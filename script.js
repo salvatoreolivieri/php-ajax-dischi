@@ -2,7 +2,7 @@
 const app = new Vue({
   el: '#app',
   data:{
-    apiUrl: "http://localhost:8888/php-ajax-dischi/index.php",
+    apiUrl: "http://localhost:8888/php-ajax-dischi/api.php",
     musicObject: []
   },
 

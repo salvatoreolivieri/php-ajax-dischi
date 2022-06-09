@@ -73,29 +73,8 @@ $dischi=[
       ]
 ];
 
+header('Content-Type: application/json');
+
+echo json_encode($dischi)
+
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Index PHP</title>
-</head>
-<body>
-
-<?php foreach($dischi as $value): ?>
-
-  <img :src="<?php echo $value["poster"] ?>" alt=""><br>
-  <?php echo $value["title"] ?> <br>
-  <?php echo $value["author"] ?> <br>
-  <?php echo $value["genre"] ?> <br>
-  <?php echo $value["year"] ?> 
-
-  <hr>
-
-<?php endforeach ?>
-
-</body>
-</html>
