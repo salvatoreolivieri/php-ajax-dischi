@@ -49,18 +49,18 @@
 
         <!-- Cards -->
         <div
-        v-for="(item,index) in musicObject"
+        v-for="(item, index) in musicObject"
         :key="index"
         class="sc-card">
     
-          <div class="img-container">
-            <img :src="musicObject[index].poster" alt="">
+          <div class="">
+            <img :src="item.poster" alt="">
           </div>
       
           <div class="text-center my-2">
-            <h4>{{musicObject[index].title}}</h4>
-            <span>{{musicObject[index].author}}</span><br>
-            <span>{{musicObject[index].year}}</span>
+            <h4>{{item.title}}</h4>
+            <span>{{item.author}}</span><br>
+            <span>{{item.year}}</span>
           </div>
         </div>
 
